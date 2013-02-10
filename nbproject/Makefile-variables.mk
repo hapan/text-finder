@@ -9,19 +9,19 @@ CND_DISTDIR=dist
 # Debug configuration
 CND_PLATFORM_Debug=GNU-Linux-x86
 CND_ARTIFACT_DIR_Debug=dist/Debug/GNU-Linux-x86
-CND_ARTIFACT_NAME_Debug=text-finder
-CND_ARTIFACT_PATH_Debug=dist/Debug/GNU-Linux-x86/text-finder
+CND_ARTIFACT_NAME_Debug=libtext_finder.so
+CND_ARTIFACT_PATH_Debug=dist/Debug/GNU-Linux-x86/libtext_finder.so
 CND_PACKAGE_DIR_Debug=dist/Debug/GNU-Linux-x86/package
-CND_PACKAGE_NAME_Debug=text-finder.tar
-CND_PACKAGE_PATH_Debug=dist/Debug/GNU-Linux-x86/package/text-finder.tar
+CND_PACKAGE_NAME_Debug=libtextfinder.so.tar
+CND_PACKAGE_PATH_Debug=dist/Debug/GNU-Linux-x86/package/libtextfinder.so.tar
 # Release configuration
 CND_PLATFORM_Release=GNU-Linux-x86
 CND_ARTIFACT_DIR_Release=dist/Release/GNU-Linux-x86
-CND_ARTIFACT_NAME_Release=text-finder
-CND_ARTIFACT_PATH_Release=dist/Release/GNU-Linux-x86/text-finder
+CND_ARTIFACT_NAME_Release=text_finder
+CND_ARTIFACT_PATH_Release=dist/Release/GNU-Linux-x86/text_finder
 CND_PACKAGE_DIR_Release=dist/Release/GNU-Linux-x86/package
-CND_PACKAGE_NAME_Release=text-finder.tar
-CND_PACKAGE_PATH_Release=dist/Release/GNU-Linux-x86/package/text-finder.tar
+CND_PACKAGE_NAME_Release=textfinder.tar
+CND_PACKAGE_PATH_Release=dist/Release/GNU-Linux-x86/package/textfinder.tar
 #
 # include compiler specific variables
 #

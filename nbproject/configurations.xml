@@ -5,6 +5,7 @@
                    displayName="Header Files"
                    projectFiles="true">
       <itemPath>FileSystem.h</itemPath>
+      <itemPath>ITextFinder.h</itemPath>
       <itemPath>TextFinder.h</itemPath>
     </logicalFolder>
     <logicalFolder name="ResourceFiles"
@@ -16,7 +17,7 @@
                    projectFiles="true">
       <itemPath>FileSystem.cpp</itemPath>
       <itemPath>TextFinder.cpp</itemPath>
-      <itemPath>main.cpp</itemPath>
+      <itemPath>client.cpp</itemPath>
     </logicalFolder>
     <logicalFolder name="TestFiles"
                    displayName="Test Files"
@@ -32,17 +33,17 @@
   </logicalFolder>
   <projectmakefile>Makefile</projectmakefile>
   <confs>
-    <conf name="Debug" type="1">
+    <conf name="Debug" type="2">
       <toolsSet>
         <remote-sources-mode>LOCAL_SOURCES</remote-sources-mode>
         <compilerSet>default</compilerSet>
       </toolsSet>
       <compileType>
-        <ccTool>
-          <preprocessorList>
-            <Elem>TEST_TEXTFINDER</Elem>
-          </preprocessorList>
-        </ccTool>
+        <linkerTool>
+          <linkerLibItems>
+            <linkerOptionItem>-ldl</linkerOptionItem>
+          </linkerLibItems>
+        </linkerTool>
       </compileType>
     </conf>
     <conf name="Release" type="1">

@@ -24,7 +24,7 @@ CLEAN_SUBPROJECTS=${CLEAN_SUBPROJECTS_${SUBPROJECTS}}
 
 
 # Project Name
-PROJECTNAME=text-finder
+PROJECTNAME=text_finder
 
 # Active Configuration
 DEFAULTCONF=Debug

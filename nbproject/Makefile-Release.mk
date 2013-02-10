@@ -37,7 +37,7 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 OBJECTFILES= \
 	${OBJECTDIR}/FileSystem.o \
 	${OBJECTDIR}/TextFinder.o \
-	${OBJECTDIR}/main.o
+	${OBJECTDIR}/client.o
 
 
 # C Compiler Flags
@@ -58,11 +58,11 @@ LDLIBSOPTIONS=
 
 # Build Targets
 .build-conf: ${BUILD_SUBPROJECTS}
-	"${MAKE}"  -f nbproject/Makefile-${CND_CONF}.mk ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/text-finder
+	"${MAKE}"  -f nbproject/Makefile-${CND_CONF}.mk ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/text_finder
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/text-finder: ${OBJECTFILES}
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/text_finder: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
-	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/text-finder ${OBJECTFILES} ${LDLIBSOPTIONS} 
+	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/text_finder ${OBJECTFILES} ${LDLIBSOPTIONS} 
 
 ${OBJECTDIR}/FileSystem.o: FileSystem.cpp 
 	${MKDIR} -p ${OBJECTDIR}
@@ -74,10 +74,10 @@ ${OBJECTDIR}/TextFinder.o: TextFinder.cpp
 	${RM} $@.d
 	$(COMPILE.cc) -O2 -MMD -MP -MF $@.d -o ${OBJECTDIR}/TextFinder.o TextFinder.cpp
 
-${OBJECTDIR}/main.o: main.cpp 
+${OBJECTDIR}/client.o: client.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} $@.d
-	$(COMPILE.cc) -O2 -MMD -MP -MF $@.d -o ${OBJECTDIR}/main.o main.cpp
+	$(COMPILE.cc) -O2 -MMD -MP -MF $@.d -o ${OBJECTDIR}/client.o client.cpp
 
 # Subprojects
 .build-subprojects:
@@ -85,7 +85,7 @@ ${OBJECTDIR}/main.o: main.cpp
 # Clean Targets
 .clean-conf: ${CLEAN_SUBPROJECTS}
 	${RM} -r ${CND_BUILDDIR}/${CND_CONF}
-	${RM} ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/text-finder
+	${RM} ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/text_finder
 
 # Subprojects
 .clean-subprojects:

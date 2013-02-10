@@ -28,10 +28,9 @@
  * 
  */
 
-#include <string>
-#include <vector>
+#include "ITextFinder.h"
 
-class TextFinder {
+class TextFinder: public ITextFinder {
 public:
   TextFinder();
   TextFinder(const std::string& path, const std::string& str);
@@ -42,16 +41,20 @@ public:
   std::string getPath();
   std::string getString();
   
+  std::vector<std::string> getAllFiles();
   std::vector<std::string> getMatchedFiles();
 private:
   std::string m_path;
   std::string m_string;
   std::vector<std::string> m_filelist;
+  std::vector<std::string> m_matchedlist;
   
-  void addFileList(std::string path, std::vector<std::string>& filelist);
-  void addFile(std::string path, std::string filetype);
+  void addFileList(const std::string& path, const std::vector<std::string>& filelist);
+  void addFile(const std::string& path, const std::string& filetype);
+  std::vector<std::string> parseFile();
+  bool isMatched(const std::string& filespec, const std::string& string);
   
-  void print(std::vector<std::string>& filelist);
+  void print(const std::vector<std::string>& filelist);
 };
 
 #endif	/* TEXTFINDER_H */
